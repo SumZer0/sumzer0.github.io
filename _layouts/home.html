@@ -105,6 +105,10 @@ layout: default
                 <!-- posted date -->
                 <i class="far fa-calendar fa-fw me-1"></i>
                 {% include datetime.html date=post.date lang=lang %}
+                
+                <!-- read time -->
+                <i class="far fa-clock fa-fw me-1"></i>
+                {% include read-time.html content=content prompt=true lang=lang %}
 
                 <!-- categories -->
                 {% if post.categories.size > 0 %}
@@ -116,6 +120,7 @@ layout: default
                     {% endfor %}
                   </span>
                 {% endif %}
+
               </div>
 
               {% if post.pin %}
