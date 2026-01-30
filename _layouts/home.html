@@ -108,7 +108,7 @@ layout: default
                 
                 <!-- read time -->
                 <i class="far fa-clock fa-fw me-1"></i>
-                {% include read-time.html content=content prompt=true lang=lang %}
+                {% include read-time.html content=post.content prompt=true lang=lang %}
 
                 <!-- categories -->
                 {% if post.categories.size > 0 %}
